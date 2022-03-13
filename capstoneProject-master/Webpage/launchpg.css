@@ -1,0 +1,235 @@
+/* @import "website for the font"; */
+
+/* body for launchpage */
+#Launch {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* div container */
+.takeQuiz {
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    display: table;
+    background: url(bananaLeaf.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* take survey button background*/
+.submit {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.6); 
+    border: 3px solid #f1f1f1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80px;
+    padding: 50px;
+    margin-left: 50%;
+    top: 50%;
+    text-align: center;
+}
+/* take survey button size */ 
+.takeBtn {
+    background-color: #eee; /* Green */
+    color: black;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: fixed; 
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 22%;
+    transform: translate(-50%, -50%);
+    margin-top: 1px;
+}
+/*survey pg1 first question*/
+#FirstQ {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+/*survey pg2 second question*/
+#SecondQ {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+/* grid for the 1st frames and color palette */
+.grid-container {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+}
+
+.grid_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Main-Frame { 
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.KMEANS { 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+
+.TT10 { 
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+
+.Avg{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+/* survey2 page */ 
+.grid-container2 {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-gap: 5px;
+   padding: 10px;
+}
+/*
+.grid-container2 > div {
+    text-align: center;
+}
+*/
+
+/* grid-row-start / grid-column-start / grid-row-end / grid-column-end. */
+.frame1 {
+    grid-area: 1 / 1 / 2 / 7;
+}
+.frame2 {
+    grid-area: 1 / 7 / 2 / 14;
+}
+.frame3 {
+    grid-area: 2 / 1 / 4 / 7;
+}
+.frame4 {
+    grid-area: 2 / 7 / 4 / 14;
+}
+.frame5 {
+    grid-area: 4 / 1 / 6 / 7;
+}
+.frame6 {
+    grid-area: 4 / 7 / 6 / 14;
+}
+.frame7 {
+    grid-area: 6 / 1 / 8 / 7;
+}
+.frame8 {
+    grid-area: 6 / 7 / 8 / 14;
+}
+.frame9{
+    grid-area: 8 / 1 / 10 / 7;
+}
+.frame10{
+    grid-area: 8 / 7 / 10 / 14;
+}
+.frame11{
+    grid-area: 10 / 1 / 12 / 7;
+}
+.frame12{
+    grid-area: 10 / 7 / 12 / 14;
+}
+.frame13{
+    grid-area: 12 / 1 / 14 / 7;
+}
+.frame14{
+    grid-area: 12 / 7 / 14 / 14;
+}
+.frame15{
+    grid-area: 14 / 1 / 16 / 7;
+}
+.frame16{
+    grid-area: 14 / 7 / 16 / 14;
+}
+.frame17{
+    grid-area: 16 / 1 / 18 / 7;
+}
+.frame18{
+    grid-area: 16 / 7 / 18 / 14;
+}
+.frame19{
+    grid-area: 18 / 1 / 20 / 7;
+}
+.frame20{
+    grid-area: 18 / 7 / 20 / 14;
+}
+
+.KMEANS2 { 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 20;
+    grid-row-end: 22;
+}
+.TT102 { 
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 20;
+    grid-row-end: 22;
+}
+.Avg2{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 20;
+    grid-row-end: 22;
+}
+
+/* thank you form at the end of survey */
+.thanks{
+    font-size: 70px;
+    text-align: center;
+}
+
+/*nav bar*/
+/* ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li, .firstTab {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: dimgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: gainsboro;
+}
+
+.active {
+    background-color: darkgray;
+}
+ */

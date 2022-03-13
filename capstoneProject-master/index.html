@@ -1,0 +1,27 @@
+<?php   
+if(!isset($_SERVER['HTTP_REFERER'])){
+    // redirect them to your desired location
+    header('location:../error.php');
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaunchPage</title>
+    <link href="launchpg.css" rel="stylesheet" type="text/css"> <!-- css stylesheet --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="color_input.js"></script>
+</head>
+    <body id="Launch">
+
+        <form action="survey.php" method="post">
+            <div class="takeQuiz">
+            </div>
+            <div class="submit">
+                <button id="mainBtn" class="takeBtn">Take Survey</button>
+            </div>
+            </form>
+
+    </body>
+</html>
